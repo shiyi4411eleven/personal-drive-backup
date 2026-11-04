@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隐私政策 | Personal Drive Backup</title><style>body{font:16px/1.75 system-ui,-apple-system,'Segoe UI',sans-serif;max-width:760px;margin:72px auto;padding:0 24px;color:#202a35}h1{font-size:30px}a{color:#1765c1}footer{margin-top:60px;border-top:1px solid #ddd;padding-top:12px;font-size:14px;color:#69717b}</style></head><body>
+<p><a href="index.html">← 返回首页</a></p><h1>隐私政策</h1>
+<p>更新日期：2026 年 11 月 4 日</p>
+<p>Personal Drive Backup 是仅供本人使用的本地备份配置，基于开源工具 rclone 和 Google Drive API 运行。本政策描述该配置如何使用 Google 用户数据。</p>
+<h2>1. 访问的数据</h2>
+<p>经用户授权，本地 rclone 程序可能访问 Google Drive 中的文件及文件夹名称、标识符、元数据和文件内容，并可创建、上传、读取、修改文件。实际访问能力以 OAuth 授权的权限范围为准；若授予完整 Drive 权限，技术上可能访问整个获授权的云盘，而不只是指定备份目录。</p>
+<h2>2. 使用目的</h2>
+<p>仅用于用户个人指定文件夹的备份、文件状态比较、上传、更新和核验。使用方不通过该配置进行广告定向、用户画像或出售用户信息。</p>
+<h2>3. 数据存储与传输</h2>
+<p>备份数据从用户自己的计算机经 rclone 直接传输至 Google Drive。OAuth 凭据及运行日志保存在用户管理的本地设备上，日志可能包含本地文件路径或文件名称。本网站不提供独立后端数据库，不收集备份文件或 OAuth 令牌。</p>
+<h2>4. 数据共享</h2>
+<p>除为实现备份而与 Google Drive API 通信外，本人不会通过此配置将 Google 用户数据出售或主动提供给第三方。Google 对云端数据的处理适用其自己的服务条款及隐私政策。</p>
+<h2>5. 保留与删除</h2>
+<p>备份文件的保留、删除由用户在自己的 Google Drive 中管理。用户可以在 Google 账号安全设置中撤销应用授权，并删除电脑上的 rclone 配置与日志。</p>
+<h2>6. 安全</h2>
+<p>本配置仅面向个人使用。OAuth 凭据应限制为本机账户访问，不应公开上传到代码仓库或通过聊天、邮件分享。</p>
+<h2>7. 联系方式及变更</h2>
+<p>如有与该个人配置相关的问题，请联系 Google Cloud OAuth 同意页面所列的用户支持邮箱。本政策如有变更，将更新本页面内容和日期。</p>
+<footer><a href="index.html">应用首页</a> · <a href="terms.html">使用条款</a></footer></body></html>

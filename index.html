@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personal Drive Backup</title><style>body{font:16px/1.75 system-ui,-apple-system,'Segoe UI',sans-serif;max-width:760px;margin:72px auto;padding:0 24px;color:#202a35}h1{font-size:32px;line-height:1.2}a{color:#1765c1}nav{display:flex;gap:24px;margin:28px 0}footer{margin-top:60px;border-top:1px solid #ddd;padding-top:12px;font-size:14px;color:#69717b}</style></head><body>
+<h1>Personal Drive Backup</h1>
+<p>Personal Drive Backup 是一个仅供账户所有者本人使用的本地自动备份流程，使用开源命令行工具 rclone 将指定 Windows 文件夹中的资料复制到用户本人授权的 Google Drive 账户。</p>
+<h2>用途及功能</h2>
+<p>此流程在用户自己的 Windows 电脑上运行。它通过 Google Drive API 检查文件状态、创建文件夹，以及上传或更新文件。用户可以自行设定备份目录与执行频率。这里介绍的是个人配置，不提供面向公众的云存储或代管服务。</p>
+<h2>数据使用</h2>
+<p>备份文件直接通过本机 rclone 程序传输到用户授权的 Google Drive。OAuth 授权信息存储在用户电脑上的 rclone 配置中。本网站只是说明页面，不要求用户在此输入 Google 密码，不接收备份文件，也不提供 OAuth 授权回调服务。</p>
+<nav><a href="privacy.html">隐私政策</a><a href="terms.html">使用条款</a></nav>
+<footer>Personal Drive Backup · 个人使用的本地备份配置</footer>
+</body></html>
