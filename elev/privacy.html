@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Elev 隐私政策：Google 账号授权、Google Drive 加密同步、用户数据存储与删除。">
+<title>隐私政策 | Elev</title><link rel="stylesheet" href="./style.css">
+</head><body>
+<div class="shell"><header class="topbar"><a class="brand" href="./index.html"><span class="mark">e</span>lev</a><nav aria-label="网站导航"><a href="./index.html">应用主页</a><a href="./privacy.html" aria-current="page">隐私政策</a><a href="./terms.html">使用条款</a></nav></header>
+<main><article class="document">
+<div class="eyebrow">PRIVACY POLICY</div>
+<h1>Elev 隐私政策</h1>
+<p class="date">最后更新：2026 年 11 月 20 日</p>
+<p>Elev（以下简称“本应用”）是一款由个人开发并主要供开发者本人使用的 Windows 与 Android 生活管理软件。本政策说明本应用在使用 Google OAuth、Google Drive API 及相关个人数据时的处理方式。下文所述的 Google 云同步功能仅在用户选择启用并授权后运行。</p>
+<h2>1. 收集与访问哪些数据</h2>
+<ul>
+<li><strong>Google 账号信息：</strong>经用户授权，可使用 OpenID Connect 账号标识与电子邮箱地址识别当前连接的 Google 账号。</li>
+<li><strong>Google Drive 文件：</strong>通过 <code>https://www.googleapis.com/auth/drive.file</code> 权限，访问由 Elev 创建或用户明确授权给 Elev 的文件及相应名称、ID、修改时间等必要元数据；主要用于个人云盘中的 <code>elev-sync</code> 专用同步目录。</li>
+<li><strong>本地生活记录：</strong>日程、计划、备忘、日记、记账、健康记录、附件和应用配置等保存在用户设备上；用户启用同步时，需要同步的内容会先在本地加密，再上传到 Google Drive。</li>
+<li><strong>本机授权凭据：</strong>OAuth 访问及刷新令牌由本应用在用户设备上用于维持已授权的连接，不会由本政策网站收集。</li>
+</ul>
+<p>Elev 不会使用 <code>drive.file</code> 权限遍历未获准访问的其他 Google Drive 文件。本应用主页、隐私政策及使用条款均为公开静态网页，不提供账号登录或文件上传入口。</p>
+<h2>2. 使用数据的目的</h2>
+<p>Google 账号信息仅用于展示和识别已连接账号；Google Drive 文件及元数据仅用于执行用户请求的同步、恢复、文件版本核对、冲突处理和故障排查。用户的 Google 数据不用于广告、用户画像、出售或面向通用 AI／机器学习模型的训练。</p>
+<h2>3. 存储、加密与保留</h2>
+<p>本应用以本机数据库为主要数据存储位置。启用 Google Drive 云同步后，待同步的业务内容在本机加密，并作为加密文件保存在用户自己的 Google Drive 账号内。所使用的加密密码及恢复密钥应由用户自行妥善保存。</p>
+<p>本网站本身不托管用户记录或 OAuth 令牌。本地数据、缓存和授权信息的保留受用户设备、应用设置及卸载方式影响；Google Drive 中的同步文件由用户在自己的 Google 账号中管理。需要联网的可选 AI 服务可能按照用户主动选择的提供方规则处理提交给该服务的内容，相关内容不因 Google Drive 授权而自动发送给 AI 服务。</p>
+<h2>4. 数据共享与第三方服务</h2>
+<p>为提供 Google 云同步，本应用会与 Google Drive API 进行必要的通信。除用户主动配置并使用其他服务、法律要求或实现用户请求所必需的情况外，不主动向第三方披露从 Google API 获取的用户数据，不出售 Google 用户数据。Google 对其基础设施中数据的处理适用 Google 自己的政策。</p>
+<h2>5. 用户控制、撤销授权与删除</h2>
+<ul>
+<li>可在 Elev 设置中断开 Google Drive 连接，并在 <a href="https://myaccount.google.com/connections" rel="noopener noreferrer">Google 账号的第三方连接管理</a>中撤销应用授权。</li>
+<li>可在自己的 Google Drive 中删除 Elev 的 <code>elev-sync</code> 文件夹及其中的同步文件；为避免重新上传，建议先关闭其他设备上的同步。</li>
+<li>可在本机管理、导出或删除应用记录。请注意，撤销 OAuth 授权通常不会自动删除已经保存在 Google Drive 的文件，也不会自动清除本机数据库。</li>
+</ul>
+<h2>6. 安全措施</h2>
+<p>Elev 的 Google Drive 同步设计采用上传前加密和最小权限授权。任何联网同步均不能保证零风险；请勿公开同步密码、恢复密钥、OAuth 令牌或客户端密钥，并在重要数据迁移前保留独立备份。</p>
+<h2>7. Google API 用户数据使用限制</h2>
+<p>Elev 对通过 Google API 获取的数据的使用遵守适用的 <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer">Google API Services User Data Policy</a>（包括 Limited Use 要求）。访问的数据仅用于本政策列出的用户可见功能，不用于与这些功能无关的目的。</p>
+<h2>8. 联系与政策更新</h2>
+<p>本应用为个人项目。如需联系维护者，请使用 Google OAuth 授权页面列出的用户支持电子邮箱，或访问 <a href="https://github.com/shiyi4411eleven" rel="noopener noreferrer">项目维护者的 GitHub 主页</a>。本政策随功能或数据处理方式发生实质变化时更新，并在此页面标明日期。</p>
+<div class="note">English summary: Elev is a personal, local-first life organizer. With your explicit authorization, it uses Google account identity and the Drive <code>drive.file</code> scope solely to synchronize encrypted app files in your own Google Drive. The site does not collect OAuth tokens or app records. You may revoke access and delete the sync folder at any time. No Google user data is sold, used for advertising, or used to train general-purpose AI models.</div>
+<p><a href="./index.html">← 返回应用主页</a> · <a href="./terms.html">查看使用条款</a></p>
+</article></main></div>
+<footer><div class="shell"><span>© 2026 Elev · 个人生活手账</span><span><a href="./index.html">应用主页</a> · <a href="./terms.html">使用条款</a></span></div></footer>
+</body></html>
